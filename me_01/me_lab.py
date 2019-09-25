@@ -97,5 +97,28 @@ def menu (cadastro_funcionario, exibir, lista_funcionario):
       
 menu(cadastro_funcionario, consulta, listar_funcionarios)
 
+contrh = 0 
+conttabil = 0 
+contti = 0 
+contmarketing = 0 
+contjuridico = 0 
+print('''RH - 1
+Contabil - 2 
+Ti- 3 
+Marketing - 4 
+Juridico - 5 ''')
+setor = str(input('Setor do funcionário: ')).upper() 
+            if setor == 'rh':  
+              contrh += 1 
+            if setor == 'contabil': 
+              conttabil += 1 
+            if setor == 'ti': 
+              contti += 1
+            if setor == 'marketing':
+              contmarketing += 1 
+            if setor == 'juridico':
+              contjuridico += 1 
+somasalario= sum(salario) 
+
 
 
